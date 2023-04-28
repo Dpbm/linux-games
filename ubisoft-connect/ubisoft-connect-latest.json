@@ -1,0 +1,93 @@
+{
+    "count": 1,
+    "next": null,
+    "previous": null,
+    "results": [
+        {
+            "id": 5228,
+            "game_id": 7870,
+            "game_slug": "ubisoft-connect",
+            "name": "Ubisoft Connect",
+            "year": 2020,
+            "user": "fabi2607",
+            "runner": "wine",
+            "slug": "ubisoft-connect-latest",
+            "version": "Latest",
+            "description": "Ubisoft Connect is the ecosystem of players services for Ubisoft games across all platforms. It aims at giving the best environment for all players to enjoy their games and connect with each other whatever the device.",
+            "notes": "The Ubisoft overlay is turned off by the script by default.",
+            "credits": "",
+            "created_at": "2017-07-29T13:15:46.188000Z",
+            "updated_at": "2023-04-28T15:37:08.665Z",
+            "draft": false,
+            "published": true,
+            "published_by": 1,
+            "rating": "",
+            "is_playable": null,
+            "steamid": null,
+            "gogid": null,
+            "gogslug": "",
+            "humbleid": "",
+            "humblestoreid": "",
+            "humblestoreid_real": "",
+            "script": {
+                "files": [
+                    {
+                        "uplay": "https://static3.cdn.ubi.com/orbit/launcher_installer/UbisoftConnectInstaller.exe"
+                    }
+                ],
+                "game": {
+                    "exe": "drive_c/Program Files (x86)/Ubisoft/Ubisoft Game Launcher/UbisoftConnect.exe",
+                    "prefix": "$GAMEDIR"
+                },
+                "installer": [
+                    {
+                        "task": {
+                            "name": "create_prefix",
+                            "prefix": "$GAMEDIR"
+                        }
+                    },
+                    {
+                        "task": {
+                            "app": "arial",
+                            "description": "Installing Arial font",
+                            "name": "winetricks",
+                            "prefix": "$GAMEDIR"
+                        }
+                    },
+                    {
+                        "task": {
+                            "app": "d3dcompiler_43",
+                            "description": "Installing D3D compiler 43",
+                            "name": "winetricks",
+                            "prefix": "$GAMEDIR"
+                        }
+                    },
+                    {
+                        "task": {
+                            "app": "d3dx9",
+                            "description": "Installing D3D9",
+                            "name": "winetricks",
+                            "prefix": "$GAMEDIR"
+                        }
+                    },
+                    {
+                        "write_file": {
+                            "content": "overlay:\n  enabled: false\n  forceunhookgame: false\n  fps_enabled: false\n  warning_enabled: false\nuser:\n  closebehavior: CloseBehavior_Close",
+                            "file": "$GAMEDIR/drive_c/users/$USER/Local Settings/Application Data/Ubisoft Game Launcher/settings.yml"
+                        }
+                    },
+                    {
+                        "task": {
+                            "args": "/S",
+                            "executable": "uplay",
+                            "name": "wineexec",
+                            "prefix": "$GAMEDIR"
+                        }
+                    }
+                ]
+            },
+            "content": "files:\n- uplay: https://static3.cdn.ubi.com/orbit/launcher_installer/UbisoftConnectInstaller.exe\ngame:\n  exe: drive_c/Program Files (x86)/Ubisoft/Ubisoft Game Launcher/UbisoftConnect.exe\n  prefix: $GAMEDIR\ninstaller:\n- task:\n    name: create_prefix\n    prefix: $GAMEDIR\n- task:\n    app: arial\n    description: Installing Arial font\n    name: winetricks\n    prefix: $GAMEDIR\n- task:\n    app: d3dcompiler_43\n    description: Installing D3D compiler 43\n    name: winetricks\n    prefix: $GAMEDIR\n- task:\n    app: d3dx9\n    description: Installing D3D9\n    name: winetricks\n    prefix: $GAMEDIR\n- write_file:\n    content: \"overlay:\\n  enabled: false\\n  forceunhookgame: false\\n  fps_enabled:\\\n      \\ false\\n  warning_enabled: false\\nuser:\\n  closebehavior: CloseBehavior_Close\"\n    file: $GAMEDIR/drive_c/users/$USER/Local Settings/Application Data/Ubisoft Game\n      Launcher/settings.yml\n- task:\n    args: /S\n    executable: uplay\n    name: wineexec\n    prefix: $GAMEDIR\n",
+            "discord_id": null
+        }
+    ]
+}

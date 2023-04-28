@@ -26,6 +26,12 @@ Here I'm using `lutris` to manage all these games and tools, so if you don't hav
 
 * [Wolfenstein 3D](./wolfenstein-3d/) [Steam]
 
+## Tools
+
+### U
+
+* [Ubisoft Connect](./ubisoft-connect/)
+
 
 ## Contribute
 
