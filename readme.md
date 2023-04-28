@@ -6,6 +6,10 @@ Here I'm using `lutris` to manage all these games and tools, so if you don't hav
 
 ## Games
 
+### A
+
+* [Assassin's Creed Syndicate](./assassins-creed-syndicate/) [Epic Games]
+
 ### C
 
 * [Ceville](./ceville/) [GOG]
