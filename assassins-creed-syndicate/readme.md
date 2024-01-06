@@ -1,7 +1,12 @@
-# Assassin's Creed Syndicate (Epic Games version)
+# Assassin's Creed Syndicate [Epic Games version]
 
-## Problems with launch
+## needed tools
 
-1. use lutris-GE-Proton7-43
+- [Lutris](https://lutris.net/)
+- [ubisoft connect [lutris runner]](../ubisoft-connect)
 
-Note: I recommend you to also install [ubisoft-connect](../ubisoft-connect) on lutris
+## Problems
+
+### Launching problem fix
+
+1. set `lutris-GE-Proton7-43` on `Lutris`
