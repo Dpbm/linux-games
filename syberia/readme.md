@@ -1,7 +1,15 @@
-# Syberia fix
+# Syberia [Steam version]
 
-## black screen
-1. run 
+## needed tools
+
+- [Steam runtime](https://store.steampowered.com/)
+
+## Problems
+
+### black screen
+
+1. run
+
 ```bash
 sh fix-black-screen.sh PATH_TO_YOUR_STEAM_LIBRARY_FOLDER
 ```
@@ -13,5 +21,7 @@ sh fix-black-screen.sh PATH_TO_YOUR_STEAM_LIBRARY_FOLDER
 4. select `Proton 5.13-6`
 
 Unfortunately the game works in window mode only.
+
+#### references
 
 [Syberia protondb](https://www.protondb.com/app/46500)
