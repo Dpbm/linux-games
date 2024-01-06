@@ -1,4 +1,4 @@
-# Ubisoft Connect
+# Ubisoft Connect [Lutris]
 
 ## Install
 
